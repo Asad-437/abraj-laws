@@ -1,0 +1,1641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income tax </title>
+    <style>
+       @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --theme-yellow: #d59630;
+  --theme-hover-yellow: #b27613;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+}
+
+.navbar {
+  background-color: transparent;
+  color: white;
+  padding: 10px 0;
+}
+
+.default-container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 10px 20px;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand img {
+  width: 150px;
+  margin-left: 400px;
+}
+
+.nav-menu a {
+  padding: 10px 20px;
+  color: white;
+  font-size: 18px;
+}
+.nav-menu a:hover {
+ color: var(--theme-yellow);
+}
+
+/* The styling for hero section start from here */
+
+.hero-section {
+  min-height: 100vh;
+  padding-bottom: 100px;
+  background: url("https://img.freepik.com/free-photo/view-3d-gavel-lawyer-s-day_23-2151023395.jpg?t=st=1705798922~exp=1705802522~hmac=17ddcecb1304f3472094c42dde6f15d949e229e4844cc022144e36dd26183fc7&w=740")
+    no-repeat center/cover;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: darken;
+}
+.hero-container .main-div {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+  max-width: 800px;
+  margin: 70px auto;
+}
+.main-heading {
+  font-size: 60px;
+  font-weight: 700;
+}
+.color-text{
+  color: var(--theme-yellow);
+}
+.main-para p {
+  font-size: 20px;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+}
+
+.theme-button {
+   padding: 15px 40px; 
+  background-color: var(--theme-yellow);
+  border-radius: 100px;
+  color: #fff;
+  transition: 0.4s;
+
+  font-weight: 600;
+ margin-inline-start: -1200px; 
+margin-top: 500px;
+/* margin-top: 50px; */
+ display: inline-block; 
+  letter-spacing: 1px;
+}
+.theme-button:hover {
+  background-color: var(--theme-hover-yellow);
+  transform: scale(0.98);
+}
+.theme-button1 {
+  padding: 15px 40px; 
+ background-color: var(--theme-yellow);
+ border-radius: 100px;
+ color: #fff;
+ transition: 0.4s;
+
+ font-weight: 600;
+margin-inline-start: -1200px; 
+display: inline-block; 
+ letter-spacing: 1px;
+}
+.theme-button1:hover {
+ background-color: var(--theme-hover-yellow);
+ transform: scale(0.98);
+}
+.footer-section {
+  padding: 50px 0;
+  background-color:rgb(0, 0, 0);
+  color: white;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: #eee9e5;
+}
+.end{
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+}
+.end h1{
+  margin-bottom: 20px;
+}
+.end p{
+  margin: 15px 0;
+}
+.end a {
+  margin: 15px 0;
+  color: white;
+}
+.end a:hover {
+  color: var(--theme-yellow);
+}
+footer .footer-text{
+  border-top: 1px solid rgba(255, 255, 255, 0.20);
+  padding: 20px 0;
+  background-color: rgb(241, 234, 234);
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+
+.service-cont h1{
+  text-align: center;
+  font-size: 50px;
+}
+.service-cont h2{
+  margin-left: 27px;
+
+}
+
+.service-cont ul{
+  margin-top: 12px; 
+   margin-left: 75px; 
+  font-size: x-large;
+}
+.underline{
+  text-decoration: underline;
+}
+.service-cont {
+  background: url('https://mnco.com.pk/wp-content/uploads/2019/01/corporate-services.jpg')   no-repeat center/cover ;
+  width:100%;
+  height:120%;
+  clip-path: circle(69%);
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: darken;
+}
+
+.service-start{
+  display:flex;
+  color: #fff;
+padding: 5px;
+
+}
+.service-cont img{
+width:250;
+margin-top: 30px;
+height:250px;
+margin-left: 50px;
+}
+.service-cont1{
+
+
+  flex-wrap: wrap;
+  width: 100%;
+  height: 120%px;
+  color: #fff;
+  background: url(' https://www.shutterstock.com/image-photo/concept-taxes-paid-by-individuals-260nw-1901581936.jpg') no-repeat center/cover;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: darken;
+   clip-path: xywh(0 5px 100% 90% round 10% 0);
+
+}
+.service-cont1 ul{
+  margin-left: 60px;
+  font-size: x-large;
+}
+.service-cont1 h1{
+margin-left: 30px;
+margin-top: 30px;
+}
+.service-cont2{
+background: url(' https://png.pngtree.com/thumb_back/fh260/background/20221018/pngtree-law-concept-civil-law-on-wall-background-verdict-property-rules-photo-image_25601422.jpg') no-repeat center/cover;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode:darken;
+  color: #fff;
+  flex-wrap: wrap;
+  width: 100%;
+  height:120%;
+
+}
+
+.service-cont2 h1{
+  margin-left: 30px;
+}
+.service-cont2 p{
+  margin: 45px;
+  font-size: 20px;
+}
+.service-cont3{
+  color: #fff;
+  width: 100%;
+  border-end-end-radius: 285px;
+  border-top-left-radius: 34px;
+  height:120%;
+  flex-wrap: wrap;
+  background: url(' https://png.pngtree.com/thumb_back/fw800/background/20220131/pngtree-criminal-law-text-concept-jury-verdict-courthouse-photo-image_21231886.jpg') no-repeat center/cover;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode:darken;
+}
+.service-cont3 h1{
+  margin-left: 30px;
+
+}
+.service-cont3 p{
+margin-left: 30px;
+  font-size: 20px;
+}
+.service-cont3 ul{
+margin-left: 60px;
+  font-size: 20px;
+
+}
+
+.main h2{
+  text-align: center;
+  font-size: 40px;
+  color:#d59630;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    font-size: 16px;
+}
+.menu{
+  flex-wrap: wrap;
+}
+.menu a {
+    display: block;
+    color: white;
+
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+
+     background-color:#d59630; 
+}
+
+/* Style for Submenu */
+.submenu {
+    display: none;
+    position: absolute;
+    border-top: 1px solid black;
+}
+
+li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    display: block;
+}
+/* MEDIA QUERY */
+@media only screen and (max-width: 310px) {
+  .navbar {
+    text-align: center;
+  }
+
+  .menu {
+    display: block;
+  }
+  .menu li{
+    display: block;
+  }
+.footer-text{
+  font-size: 12px;
+}
+  .hero-container {
+    padding: 15px;
+  }
+  .main-div .main-heading {
+    font-size: 20px !important; 
+  }
+  .main-para {
+    font-size: 12px;
+  }
+  .service-cont3{
+    border-radius: 10px;
+  }
+  .service-cont,
+  .service-cont1,
+  .service-cont2,
+  .service-cont3 {
+    padding: 10px; 
+    width: 100%; 
+    box-sizing: border-box; 
+    margin: 0; 
+  }
+.service-cont3 p{
+  margin-left: -5px;
+}
+.service-cont3 li{
+  margin-left: -12px;
+}
+.service-cont3 h1{
+  margin-left: -8px;
+  margin-top: 15px;
+}
+.service-cont2 p{
+  margin-left: 6px;
+}
+.service-cont2 h1{
+  margin-left: -5px;
+}
+.service-cont1 p{
+  margin-left: -10px;
+}
+.service-cont1 li{
+  margin-left: -8px;
+}
+.service-cont1 h1{
+  margin-left: 2px;
+  margin-top: 15px;
+}
+
+.service-cont h2{
+  margin-left:5px;
+}
+.service-cont li{
+  margin-left: -10px;
+}
+.subhead,
+.underline,
+.main-haed {
+    font-size: 18px;
+  }
+ul {
+    padding-left: 15px;
+  }
+.footer-container {
+    padding: 15px;
+    display: block;
+  }
+
+.end {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+.footer-text {
+    font-size: 12px;
+  }
+.theme-button{
+  margin-left: -100px;
+}
+.theme-button1{
+  margin-left: 1px;
+  font-size: small;
+}
+.brand img{
+margin-left:10px;
+width:80px;
+}
+
+}
+@media only screen and (max-width: 350px) {
+.navbar {
+    text-align: center;
+  }
+.menu li{
+  display: block;
+}
+  .menu {
+    display: block;
+  }
+  .footer-text{
+  font-size: 12px;
+}
+  .hero-container {
+    padding: 15px;
+  }
+
+  .main-div .main-heading {
+    font-size: 20px !important; 
+  }
+
+  .main-para {
+    font-size: 12px;
+  }
+
+  .service-cont,
+  .service-cont1,
+  .service-cont2,
+  .service-cont3 {
+    padding: 10px; 
+    width: 100%; 
+    box-sizing: border-box; 
+    margin: 0; 
+  }
+.service-cont3 p{
+  margin-left: -5px;
+}
+.service-cont3 li{
+  margin-left: -12px;
+}
+.service-cont3 h1{
+  margin-left: -8px;
+  margin-top: 15px;
+}
+.service-cont2 p{
+  margin-left: 6px;
+}
+.service-cont2 h1{
+  margin-left: -5px;
+}
+.service-cont1 p{
+  margin-left: -10px;
+}
+.service-cont1 li{
+  margin-left: -8px;
+}
+.service-cont1 h1{
+  margin-left: 2px;
+  margin-top: 15px;
+}
+.service-cont h2{
+  margin-left:5px;
+}
+.service-cont li{
+  margin-left: -10px;
+}
+  .subhead,
+  .underline,
+  .main-haed {
+    font-size: 18px;
+   }
+
+  ul {
+    padding-left: 15px;
+  }
+
+  .footer-container {
+    display: block;
+    padding: 15px;
+  }
+
+  .end {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .footer-text {
+    font-size: 12px;
+  }
+  .theme-button{
+  margin-left: -100px;
+}
+.theme-button1{
+  margin-left: 1px;
+  font-size: small;
+}
+.brand img{
+margin-left:30px;
+width:90px;
+}
+.main-heading{
+  font-size: 30px;
+}
+.service-cont3{
+  border-radius: 10px;
+}
+} 
+
+
+ @media only screen and (max-width: 365px) {
+  .navbar {
+    text-align: center;
+  }
+
+  .menu {
+    display: block;
+  }
+  .menu li{
+    display: block;
+  }
+  .footer-text{
+  font-size: 12px;
+}
+  .hero-container {
+    padding: 15px;
+  }
+
+  .main-div .main-heading {
+    font-size: 20px !important; 
+  }
+
+  .main-para {
+    font-size: 12px;
+  }
+
+  .service-cont,
+  .service-cont1,
+  .service-cont2,
+  .service-cont3 {
+    padding: 10px;
+    width: 100%; 
+    box-sizing: border-box; 
+    margin: 0; 
+  }
+
+.service-cont3 p{
+  margin-left: -5px;
+}
+.service-cont3 li{
+  margin-left: -12px;
+}
+.service-cont3 h1{
+  margin-left: -8px;
+  margin-top: 15px;
+}
+.service-cont2 p{
+  margin-left: 6px;
+}
+.service-cont2 h1{
+  margin-left: -5px;
+}
+.service-cont1 p{
+  margin-left: -10px;
+}
+.service-cont1 li{
+  margin-left: -8px;
+}
+.service-cont1 h1{
+  margin-left: 2px;
+  margin-top: 15px;
+}
+
+.service-cont h2{
+  margin-left:5px;
+}
+.service-cont li{
+  margin-left: -10px;
+}
+
+
+  .subhead,
+  .underline,
+  .main-haed {
+    font-size: 18px;
+  }
+
+  ul {
+    padding-left: 15px;
+  }
+
+  .footer-container {
+    display: block;
+    padding: 15px;
+  }
+
+  .end {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .footer-text {
+    font-size: 12px;
+  }
+  .theme-button{
+  margin-left: -100px;
+}
+.theme-button1{
+  margin-left: 1px;
+  font-size: small;
+}
+.brand img{
+
+    margin-left: 20px;
+    width:90px;
+
+    }
+
+    .service-cont3{
+      border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 442px){}
+@media screen and (max-width: 422px){}
+@media screen and (max-width: 426px)
+
+{
+
+  .content-wrapping{
+  flex-wrap: wrap;
+  display:block;
+  }
+  .profile-section{
+    flex-wrap: wrap;
+    display:block;
+  }
+.profile-container{
+  flex-wrap: wrap;
+    display:block;
+}
+.footer-text{
+  font-size: 12px;
+}
+.content-main-div{
+  flex-wrap: wrap;
+  display:block;
+}
+ .footer-container{
+flex-wrap: wrap;
+display:block;
+}
+.img-div{
+  margin-top: 30px;
+}
+.footer-section{
+flex-wrap: wrap;
+  display:block;
+}
+.menu li{
+  position: relative;
+}
+.submenu li{
+  width: 100%;
+  z-index: 300;
+}
+
+.submenu{
+  left:-100px;
+  top:0;
+}
+
+ .container1 ul{
+  margin-left: 15px;
+  margin-top: 30px;
+}
+.container1 h2{
+  font-size: 25px;
+}
+.service-cont3 ul{
+margin-left: 5px;
+}
+.service-cont3{
+  border-radius: 10px;
+}
+
+.theme-button{
+  margin-left: -100px;
+}
+.theme-button1{
+  margin-left: 1px;
+  font-size: small;
+}
+.brand img{
+margin-left: 30px;
+
+width:90px;
+}
+.menu li{
+  display: block;
+}
+.main-heading{
+  font-size: 30px;
+}
+
+}
+ 
+@media screen and (max-width: 490px) {
+  .content-wrapping{
+  flex-wrap: wrap;
+  display:block;
+  }
+  .profile-section{
+    flex-wrap: wrap;
+    display:block;
+  }
+.profile-container{
+  flex-wrap: wrap;
+    display:block;
+}
+.content-main-div{
+  flex-wrap: wrap;
+  display:block;
+}
+.footer-text{
+  font-size: 12px;
+}
+ .footer-container{
+flex-wrap: wrap;
+display:block;
+}
+.img-div{
+  margin-top: 30px;
+}
+.footer-section{
+flex-wrap: wrap;
+  display:block;
+      }
+      li {
+        display: block;
+        width: 100%;
+    }
+
+    ul ul {
+        position: static;
+        display: none;
+    }
+
+    li:hover > ul {
+        display: none;
+    }
+
+.menu li{
+  display: block;
+}
+    .container1 ul{
+  margin-left: 15px;
+  margin-top: 30px;
+}
+.container1 h2{
+  font-size: 25px;
+}
+.service-cont3 ul{
+margin-left: 5px;
+}
+.service-cont3{
+  border-radius: 10px;
+}
+
+.menu li{
+  position: relative;
+}
+.submenu li{
+  width: 100%;
+  z-index: 300;
+}
+
+.submenu{
+  left:-100px;
+  top:0;
+}
+.theme-button{
+  margin-left: -100px;
+}
+.theme-button1{
+  margin-left: 1px;
+  font-size: small;
+}
+.brand img{
+margin-left: 30px;
+width:90px;
+}
+.main-heading{
+  font-size: 30px;
+}
+} 
+
+
+@media screen and (max-width: 510px) {
+  .content-wrapping{
+  flex-wrap: wrap;
+  display:block;
+  }
+  .profile-section{
+    flex-wrap: wrap;
+    display:block;
+  }
+  .footer-text{
+  font-size: 12px;
+}
+.profile-container{
+  flex-wrap: wrap;
+    display:block;
+}
+.content-main-div{
+  flex-wrap: wrap;
+  display:block;
+}
+ .footer-container{
+flex-wrap: wrap;
+display:block;
+}
+.img-div{
+  margin-top: 30px;
+}
+.footer-section{
+flex-wrap: wrap;
+  display:block;
+      }
+      li {
+        display: block;
+        width: 100%;
+    }
+
+    ul ul {
+        position: static;
+        display: none;
+    }
+
+    li:hover > ul {
+        display: none;
+    }
+
+
+    .menu li{
+  position: relative;
+}
+.submenu li{
+  width: 100%;
+  z-index: 300;
+}
+
+.submenu{
+  left:-100px;
+  top:0;
+}
+
+
+    .container1 ul{
+  margin-left: 15px;
+  margin-top: 30px;
+}
+.container1 h2{
+  font-size: 25px;
+}
+.service-cont3 ul{
+margin-left: 5px;
+}
+.service-cont3{
+  border-radius: 10px;
+}
+.theme-button{
+  margin-left: -100px;
+}
+.theme-button1{
+  margin-left: 1px;
+  font-size: small;
+}
+.menu li{
+  display: block;
+}
+.brand img{
+margin-left: 30px;
+
+width:90px;
+}
+.main-heading{
+  font-size: 30px;
+}
+} 
+
+@media screen and (max-width: 580px) {
+  .content-wrapping{
+  flex-wrap: wrap;
+  display:block;
+  }
+  .profile-section{
+    flex-wrap: wrap;
+    display:block;
+  }
+  .menu li{
+  display: block;
+}
+.profile-container{
+  flex-wrap: wrap;
+    display:block;
+}
+.content-main-div{
+  flex-wrap: wrap;
+  display:block;
+}
+.footer-text{
+  font-size: 12px;
+}
+ .footer-container{
+flex-wrap: wrap;
+display:block;
+}
+.img-div{
+  margin-top: 30px;
+}
+.footer-section{
+flex-wrap: wrap;
+  display:block;
+      }
+      li {
+        display: block;
+        width: 100%;
+    }
+
+    ul ul {
+        position: static;
+        display: none;
+    }
+
+    li:hover > ul {
+        display: none;
+    }
+
+
+    .menu li{
+  position: relative;
+}
+.submenu li{
+  width: 100%;
+  z-index: 300;
+}
+
+.submenu{
+  left:-100px;
+  top:0;
+}
+
+
+    .container1 ul{
+  margin-left: 15px;
+  margin-top: 30px;
+}
+.container1 h2{
+  font-size: 25px;
+}
+.service-cont3 ul{
+margin-left: 5px;
+}
+.service-cont3{
+  border-radius: 10px;
+}
+.theme-button{
+  margin-left: -100px;
+}
+.theme-button1{
+  margin-left: 1px;
+  font-size: small;
+}
+.brand img{
+margin-left: 30px;
+
+width:90px;
+} 
+.main-heading{
+  font-size: 30px;
+}
+}
+
+@media screen and (max-width: 680px) {
+  .content-wrapping{
+  flex-wrap: wrap;
+  display:block;
+  }
+  .profile-section{
+    flex-wrap: wrap;
+    display:block;
+  }
+  .menu li{
+  display: block;
+}
+.profile-container{
+  flex-wrap: wrap;
+    display:block;
+}
+.footer-text{
+  font-size: 12px;
+}
+.content-main-div{
+  flex-wrap: wrap;
+  display:block;
+}
+ .footer-container{
+flex-wrap: wrap;
+display:block;
+}
+.img-div{
+  margin-top: 30px;
+}
+.footer-section{
+flex-wrap: wrap;
+  display:block;
+      }
+      li {
+        display: block;
+        width: 100%;
+    }
+
+    ul ul {
+        position: static;
+        display: none;
+    }
+
+    li:hover > ul {
+        display: none;
+    }
+
+
+    .menu li{
+  position: relative;
+}
+.submenu li{
+  width: 100%;
+  z-index: 300;
+}
+
+.submenu{
+  left:-100px;
+  top:0;
+}
+.brand img{
+margin-left: 30px;
+
+width:90px;
+}
+.main-heading{
+  font-size: 30px;
+}
+
+    .container1 ul{
+  margin-left: 15px;
+  margin-top: 30px;
+}
+.container1 h2{
+  font-size: 25px;
+}
+.service-cont3 ul{
+margin-left: 5px;
+}
+.service-cont3{
+  border-radius: 10px;
+}
+.theme-button{
+  margin-left: -100px;
+}
+.theme-button1{
+  margin-left: 1px;
+  font-size: small;
+}
+}
+
+@media screen and (max-width: 780px) {
+  .content-wrapping{
+  flex-wrap: wrap;
+  display:block;
+  }
+  .profile-section{
+    flex-wrap: wrap;
+    display:block;
+  }
+.profile-container{
+  flex-wrap: wrap;
+    display:block;
+}
+.content-main-div{
+  flex-wrap: wrap;
+  display:block;
+}
+ .footer-container{
+flex-wrap: wrap;
+}
+.img-div{
+  margin-top: 30px;
+}
+.footer-text{
+  font-size: 12px;
+}
+.brand img{
+margin-left: 30px;
+
+width:90px;
+}
+.main-heading{
+  font-size: 30px;
+}
+.footer-section{
+flex-wrap: wrap;
+  display:block;
+      }
+      li {
+        display: block;
+        width: 100%;
+    }
+
+    ul ul {
+        position: static;
+        display: none;
+    }
+
+    li:hover > ul {
+        display: none;
+    }
+
+
+    .menu li{
+  position: relative;
+}
+.submenu li{
+  width: 100%;
+  z-index: 300;
+}
+
+.submenu{
+  left:-100px;
+  top:0;
+}
+    .container1 ul{
+  margin-left: 15px;
+  margin-top: 30px;
+}
+.container1 h2{
+  font-size: 25px;
+}
+.service-cont3 ul{
+margin-left: 5px;
+}
+.service-cont3{
+  border-radius: 10px;
+}
+.theme-button{
+  margin-left: -100px;
+}
+.theme-button1{
+  margin-left: 1px;
+  font-size: small;
+}
+
+}
+ 
+@media screen and (max-width: 880px) {
+  .content-wrapping{
+  flex-wrap: wrap;
+  display:block;
+  }
+  .profile-section{
+    flex-wrap: wrap;
+    display:block;
+  }
+.profile-container{
+  flex-wrap: wrap;
+    display:block;
+}
+.content-main-div{
+  flex-wrap: wrap;
+  display:block;
+}
+ .footer-container{
+flex-wrap: wrap;
+}
+.img-div{
+  margin-top: 30px;
+}
+.footer-text{
+  font-size: 12px;
+}
+.footer-section{
+flex-wrap: wrap;
+  display:block;
+      }
+      li {
+        display: block;
+        width: 100%;
+    }
+
+    ul ul {
+        position: static;
+        display: none;
+    }
+
+    li:hover > ul {
+        display: none;
+    }
+
+    .menu li{
+  position: relative;
+}
+.submenu li{
+  width: 100%;
+  z-index: 300;
+}
+
+.submenu{
+  left:-100px;
+  top:0;
+}
+
+
+
+    .container1 ul{
+  margin-left: 15px;
+  margin-top: 30px;
+}
+.container1 h2{
+  font-size: 25px;
+}
+.service-cont3 ul{
+margin-left: 5px;
+}
+.service-cont3{
+  border-radius: 10px;
+}
+.theme-button{
+  margin-left: -100px;
+}
+.theme-button1{
+  margin-left: 1px;
+  font-size: small;
+}
+.brand img{
+    margin-left:30px;
+    width:90px;
+    text-align: center;
+    justify-content:center;
+    }
+}
+
+
+@media screen and (max-width: 980px) {
+  .content-wrapping{
+  flex-wrap: wrap;
+  display:block;
+  }
+  .profile-section{
+    flex-wrap: wrap;
+    display:block;
+  }
+  .theme-button{
+  margin-left: -100px;
+}
+.theme-button1{
+  margin-left: 1px;
+  font-size: small;
+}
+.brand img{
+    margin-left:30px;
+    width:90px;
+    text-align: center;
+    justify-content:center;
+    }
+.profile-container{
+  flex-wrap: wrap;
+    display:block;
+}
+.footer-text{
+  font-size: 12px;
+}
+.content-main-div{
+  flex-wrap: wrap;
+  display:block;
+}
+ .footer-container{
+flex-wrap: wrap;
+}
+.img-div{
+  margin-top: 30px;
+}
+.footer-section{
+flex-wrap: wrap;
+  display:block;
+      }
+      li {
+        display: block;
+        width: 100%;
+    }
+
+    ul ul {
+        position: static;
+        display: none;
+    }
+
+    li:hover > ul {
+        display: none;
+    }
+ 
+.menu li{
+  position: relative;
+}
+.submenu li{
+  width: 100%;
+  z-index: 300;
+}
+
+.submenu{
+  left:-100px;
+  top:0;
+}
+
+  
+    .container1 ul{
+  margin-left: 15px;
+  margin-top: 30px;
+}
+.container1 h2{
+  font-size: 25px;
+}
+.service-cont3 ul{
+margin-left: 5px;
+}
+.service-cont3{
+  border-radius: 10px;
+}
+}
+
+@media screen and (max-width: 1180px) {
+  .content-wrapping{
+  flex-wrap: wrap;
+  display:block;
+  }
+  .profile-section{
+    flex-wrap: wrap;
+    display:block;
+  }
+.profile-container{
+  flex-wrap: wrap;
+    display:block;
+}
+.content-main-div{
+  flex-wrap: wrap;
+  display:block;
+}
+ .footer-container{
+flex-wrap: wrap;
+}
+.img-div{
+  margin-top: 30px;
+}
+.footer-section{
+flex-wrap: wrap;
+  display:block;
+      }
+      li {
+        display: block;
+        width: 100%;
+    }
+
+    ul ul {
+        position: static;
+        display: none;
+    }
+
+    li:hover > ul {
+        display: none;
+    }
+    .menu li{
+  position: relative;
+}
+.submenu li{
+  width: 100%;
+  z-index: 300;
+}
+
+.submenu{
+  left:-100px;
+  top:0;
+}
+    .container1 ul{
+  margin-left: 15px;
+  margin-top: 30px;
+}
+.container1 h2{
+  font-size: 25px;
+}
+.service-cont3 ul{
+margin-left: 5px;
+}
+.service-cont3{
+  border-radius: 10px;
+}
+} 
+
+.main-div{
+  transition: all .2s ease-out;
+}
+.footer-text{
+  font-size: 12px;
+}
+.main-div h1:hover{
+  transform: scale(1.15);
+}
+
+.navbar{
+  transition: all .2s ease-out;
+}
+.navbar img:hover{
+  transform: scale(1.15); 
+}
+.submenu li{
+      background-color: black;
+     } 
+
+    </style>
+</head>
+<body>
+    <section class="hero-section" id="start">
+        <div class="navbar">
+          <div class="default-container nav-container">
+            <a href="index.html" class="brand">
+              <img src="logo4.png" />
+            </a>
+           
+            <div class="menu">
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="Services.html">Services</a>
+              
+                    <ul class="submenu">
+                      <li><a href="#corporate"> Corporate </a></li>
+                      <li><a href="#tax"> Tax </a></li>
+                      <li><a href="#civil"> Civil</a></li>
+                      <li><a href="#criminal"> Criminal</a></li>
+                  </ul>
+              </li>
+               
+                  <li><a href="Associates.html">Assocites</a></li>
+                  <li><a href="#end1">Contact</a></li>
+              </ul>
+          </div>
+          </div>
+        </div>
+        <div class="default-container hero-container">
+          <div class="main-div">
+            <h1 class="main-heading">
+              ABRAJ<span class="color-text">LAW</span>ASSOCIATES
+            </h1>
+            <div class="main-para">
+              <p><b>
+                "HELP PEOPLE  TO GET JUSTICE"
+            
+             </b>
+               </p>
+               <p><b>
+                  "ASSISST COURTS TO PROVIDE JUSTICE"
+              </b>
+                </p>
+            </div>
+            <a class="theme-button" href="tel:03007256466">0322-8661515 </a>
+            <a  class="theme-button1" href="mailto:abrajassociates786@gmail.com">abrajassociates786@gmail.com</a>
+
+          </div>
+        </div>
+      </section>
+</div>
+<br>
+<br>
+<div class="main">
+<h2 class="main-haed" >
+  Services
+ </h2>
+</div>
+ <br>
+ <br>
+<div class="container1"id="start" >
+  <div class="service-start">
+    <div  class="service-cont"id="corporate">
+      
+       
+            <br>
+            <br>
+            <h2 class="subhead"><b><u class="underline"> Corporate  Services:</u></b></h2>
+        <ul>
+            <li>Registration of firms. </li>
+            <li> Registration of private Limited Companies.</li>
+            <li>	Assistance to the company secretaries in filing return/documents required under company and other Corporate Laws in Pakistan. </li>
+            <li>Maintenance of statutory books/records required under the Corporate Laws. </li>
+            <li>	Assisting holding annual general meeting, board meeting, allotment of shares etc. </li>
+            <li> 	Registration of Trusts, NGOs NPOs. </li>
+            <li> 	Registration, Modification of Trade Marks and Copy Rights.</li>
+            <li> 	Registration of All Businesses in relevant departments.</li>
+            <li> 	Consultancy about Development and Promotion of Every kind of Business.</li>
+            
+        </ul>
+        <br>
+        <br>
+    </div>
+ 
+  </div>
+    <br>
+    <br>
+    <br>
+    <div class="service-cont1"id="tax">
+<br>
+<h1 class="underline"> TAXATION  SERVICES:</h1>
+<br>
+<ul>
+    <li>  Tax Book Keeping.</li>
+    <LI> 	Tax Consultancy Services. </LI>
+    <li>  	Compliance of Provision of Sales Tax Act 1990.</li>
+    <li> 	Filling of Monthly Sales Tax Returns.  </li>
+    <li> 	Compliance of Sales Tax Audits Conducted by Sales Tax Officers.</li>
+    <li> 	Compliance of Sales Tax Refund Claims and Procedures.  </li>
+    <li>  	Compliance of Provision of Income Tax Ordinance 2001. </li>
+<li>  Filling of Annually Income Tax Returns.</li>
+<li> 	Filling of Withholding Tax Statements and Others. </li>
+<li>	Compliance of Income Tax Audits Conducted by Income Tax Officers.</li>
+<li>	Conducting Of Appeals against Orders of Assessing Officers. </li>
+<li>Conducting Of Appeals against Orders of Commissioner Appeals.</li>
+<br>
+<br>
+</ul>
+<br>
+<br>
+<br>
+</div>
+
+<br>
+<br>
+<br>
+<div class="service-cont2"id="civil">
+<br>
+<br>
+  <h1 class="underline">LEGAL SERVICES ABOUT CIVIL LAWS:</h1>
+  <br>
+<p>If you will likely need a civil litigation attorney to help you resolve your situation. Whether you are involved in a civil lawsuit or not, a civil litigation attorney can help you. If you have a business, a qualified civil attorney can also help you. Businesses face civil litigation all the time. A Civil Lawyer in Pakistan can advise you in time and save you from an expensive civil lawsuit. <br>
+  We also litigate discrimination cases, nonprofit discrimination cases, and a variety of other civil rights cases. Our civil rights attorneys handle cases involving politics, campaign finance, and early termination.<br>
+  Our Civil Lawyer in Pakistan had appeared before superior courts and high courts throughout the country. We have also filed nationwide subpoenas and ancillary relief in class actions and other complex litigation involving clients in different jurisdictions. 
+  Through these efforts, we aim to achieve the most desirable results with low-cost productivity that saves owners/Clients and their representatives significant time.
+  </p>
+<br>
+
+  </p>
+  <br>
+</div>
+  </div>
+  <br>
+  <br>
+  <div class="service-cont3"id="criminal">
+    <br>
+    <h1 class="underline" > LEGAL SERVICES ABOUT CRIMINAL LAWS:</h1> </li>
+  </ul>
+  
+  
+    <br>
+  <p>   At Criminal Law Services, We handled numerous criminal cases involving misdemeanors, felonies, and miscarriages of justice of all kinds, and has almost always defended the rights of our clients in court. Our attorneys strive to ensure that our clients do not spend their days alone in jail. 
+    <h1 class="underline"> Objectives of Criminal Law:</h1>
+    <br>
+    <br>
+<p>  The most widely recognized objectives of criminal law in Pakistan are:</p>
+<br>
+
+<ul>
+  <li> Pakistani criminal law should reflect intolerance of criminal behavior by arresting, prosecuting, and deporting offenders. </li>
+<li> Criminals should not be allowed to enjoy their criminal activities and should be encouraged to strive to ensure that others are not victimized by crime.</li>
+
+<li> Pakistan's criminal law should be used judiciously to rehabilitate criminals and weaken individuals who may pose any danger to society.</li>
+<li> To uphold law and order to ensure the welfare and security of the individual.</li>
+<li> To support victims at all times to obtain satisfactory payment from their abusers.</li>
+<li> Ensure effective and adequate access to justice, ensuring proper treatment of suspects, defendants, detainees, and witnesses.<br> Also, ensure that the innocent are acquitted without harassment and that the guilty are justly punished.</li>
+<li> Ensure that the criminal justice structure is accountable to society.</li>
+<li><b> We have the best criminal lawyer and provide legal assistance to their clients in all aspects of the criminal process.</b></li>
+</ul>
+<br>
+<br>
+<br>
+  </div>
+  </div>
+
+<br>
+<br>
+<br>
+<!-- <footer section></footer> -->
+<footer>
+    <section class="footer-section">
+      <div class="default-container footer-container">
+        <div class="end" id="end1">
+          <h1>Abraj Law Associates</h1>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="Services.html">Services</a>
+          <a href="Associates.html">Associates</a>
+          <a href="#end1">Contact</a>
+        </div>
+
+        <div class="end" id="end2">
+          <h1>Contact us</h1>
+          <a href="mailto:abrajassociates786@gmail.com">abrajassociates786@gmail.com</a>
+          <a href="tel:03007256466">0300-7256466</a>
+        </div>
+        <div class="end" id="end3">
+          <h1>Addresses</h1>
+          <p>Chamber # 168 ,Upper Floor District Courts fsd</p>
+          <p>Lahore B-1 Atif Center Turner Road Lahore</p>
+          <p>
+            205.2nd Floor Ali Trade Center M M Alam Road Gulberg III Lahore
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="footer-text">Al-Barkat Software House 0332-6669841( contact us to make websites of all kinds of businesses)</div>
+
+  </footer>
+</body>
+</html>

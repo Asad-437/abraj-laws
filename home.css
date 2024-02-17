@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --theme-yellow: #d59630;
+  --theme-hover-yellow: #b27613;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+}
+
+.navbar {
+  background-color: transparent;
+  color: white;
+  padding: 10px 0;
+}
+
+.default-container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 10px 20px;
+}
+
+.nav-container {
+  display: flex;
+   align-items: center; 
+   justify-content: space-between; 
+}
+
+.brand img {
+  width: 150px;
+  margin-left: 400px;
+}
+
+
+
+/* The styling for hero section start from here */
+
+.hero-section {
+  min-height: 100vh;
+  padding-bottom: 100px;
+  background: url("https://img.freepik.com/free-photo/view-3d-gavel-lawyer-s-day_23-2151023395.jpg?t=st=1705798922~exp=1705802522~hmac=17ddcecb1304f3472094c42dde6f15d949e229e4844cc022144e36dd26183fc7&w=740")
+    no-repeat center/cover;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: darken;
+}
+.hero-container .main-div {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+  max-width: 800px;
+  margin: 70px auto;
+}
+.main-heading {
+  font-size: 60px;
+  font-weight: 700;
+}
+.color-text{
+  color: var(--theme-yellow);
+}
+.main-para p {
+  font-size: 20px;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+}
+
+.theme-button {
+   padding: 15px 40px; 
+  background-color: var(--theme-yellow);
+  border-radius: 100px;
+  color: #fff;
+  transition: 0.4s;
+
+  font-weight: 600;
+ margin-inline-start: -1200px; 
+margin-top: 500px;
+/* margin-top: 50px; */
+ display: inline-block; 
+  letter-spacing: 1px;
+}
+.theme-button:hover {
+  background-color: var(--theme-hover-yellow);
+  transform: scale(0.98);
+}
+.theme-button1 {
+  padding: 15px 40px; 
+ background-color: var(--theme-yellow);
+ border-radius: 100px;
+ color: #fff;
+ transition: 0.4s;
+
+ font-weight: 600;
+margin-inline-start: -1200px; 
+/* margin-top: 500px; */
+/* margin-top: 50px; */
+display: inline-block; 
+ letter-spacing: 1px;
+}
+.theme-button1:hover {
+ background-color: var(--theme-hover-yellow);
+ transform: scale(0.98);
+}
+
+
+
+
+
+
+.profile-section {
+  padding: 100px 0;
+  flex-wrap: wrap;
+  background-color: #a7c3d1;
+}
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.profile-container .content-main-div {
+  flex: 1;
+}
+.profile-container .image-div {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+}
+.image-div img {
+  width: 350px;
+  border-radius: 10px;
+}
+.content-wrapping {
+  max-width: 550px;
+}
+.content-main-div .prof-name {
+  font-size: 50px;
+  line-height: 1.2em;
+  font-weight: 800;
+}
+.content-main-div .sub-heading {
+  font-size: 25px;
+  line-height: 1.3em;
+  padding: 10px 0;
+}
+.content-main-div p {
+  font-size: 18px;
+  line-height: 1.3em;
+}
+
+
+.footer-section {
+  padding: 50px 0;
+  background-color:rgb(0, 0, 0);
+  color: white;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: #eee9e5;
+}
+.end{
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+}
+.end h1{
+  margin-bottom: 20px;
+}
+.end p{
+  margin: 15px 0;
+}
+.end a {
+  margin: 15px 0;
+  color: white;
+}
+.end a:hover {
+  color: var(--theme-yellow);
+}
+footer .footer-text{
+  border-top: 1px solid rgba(255, 255, 255, 0.20);
+  padding: 20px 0;
+  background-color: rgb(255, 248, 248);
+  color: rgb(0, 0, 0);
+  text-align: center;
+}

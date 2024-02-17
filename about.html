@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --theme-yellow: #d59630;
+  --theme-hover-yellow: #b27613;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+}
+
+.navbar {
+  background-color: transparent;
+  color: white;
+  padding: 10px 0;
+}
+
+.default-container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 10px 20px;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand img {
+  width: 150px;
+  margin-left: 400px;
+}
+
+
+/* The styling for hero section start from here */
+
+.hero-section {
+  min-height: 100vh;
+  padding-bottom: 100px;
+  background: url("https://img.freepik.com/free-photo/view-3d-gavel-lawyer-s-day_23-2151023395.jpg?t=st=1705798922~exp=1705802522~hmac=17ddcecb1304f3472094c42dde6f15d949e229e4844cc022144e36dd26183fc7&w=740")
+    no-repeat center/cover;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: darken;
+}
+.hero-container .main-div {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+  max-width: 800px;
+  margin: 70px auto;
+}
+.main-heading {
+  font-size: 60px;
+  font-weight: 700;
+}
+.color-text{
+  color: var(--theme-yellow);
+}
+.main-para p {
+  font-size: 20px;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+}
+
+ .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    font-size: 16px;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+} 
+
+.menu a:hover {
+    background-color:#d59630; 
+} 
+
+.footer-section {
+  padding: 50px 0;
+  background-color:rgb(0, 0, 0);
+  color: white;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: #eee9e5;
+}
+.end{
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+}
+.end h1{
+  margin-bottom: 20px;
+}
+.end p{
+  margin: 15px 0;
+}
+.end a {
+  margin: 15px 0;
+  color: white;
+}
+.end a:hover {
+  color: var(--theme-yellow);
+}
+footer .footer-text{
+  border-top: 1px solid rgba(255, 255, 255, 0.20);
+  padding: 20px 0;
+  background-color: rgb(255, 248, 248);
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+
+.end img{
+  border-radius: 50%;
+  width:30px;
+  height:30px;
+}
+.number{
+  font-size: 15px;
+}
+/* container1 */
+.container1{
+  margin: auto;
+  flex-wrap: wrap;
+  text-align: justify;
+  margin: auto;
+  margin-top: 100px;
+}
+.intro h1{
+  font-weight: 1000;
+  text-align: center;
+  text-decoration: underline;
+  margin-left: 90px;
+}
+
+.intro p{
+  margin-top: 20px;
+  margin-left: 40px;
+  line-height:40px;
+  font-size: 25px;
+
+  text-align: center;
+}
+.intro h2{
+  font-weight: 1000px;
+
+  text-decoration: underline;
+  text-align: center;
+  margin-left: 90px;
+}
+.container2{
+  display: flex;
+  /* margin: 150px ;  */
+  margin: 120px;
+  justify-content: space-between;
+  line-height: 20px;
+  font-size: larger; 
+}
+body{
+  background-color:#a7c3d1;
+}
+.container2 ul{
+  margin-top: 15px;
+   font-size: 50px; 
+  text-align: justify;
+  font-weight: 500;
+}
+.container2 li{
+  font-size: 18px;
+  text-align: justify;
+}
+.container3{
+display: flex;
+ flex-wrap: wrap; 
+margin:100px;
+justify-content: center;
+text-align: center;
+justify-content: space-between;
+
+}
+.container3 img{
+  justify-content: center;
+  height:250px;
+}
+
+.container3 p{
+
+  justify-content: center;
+  font-size: 25px;
+  line-height: 1.2em;
+  font-weight: 800;
+}
+
+.theme-button {
+   padding: 15px 40px; 
+  background-color: var(--theme-yellow);
+  border-radius: 100px;
+  color: #fff;
+  transition: 0.4s;
+
+  font-weight: 600;
+ margin-inline-start: -1200px; 
+margin-top: 500px;
+ display: inline-block; 
+  letter-spacing: 1px;
+}
+.theme-button:hover {
+  background-color: var(--theme-hover-yellow);
+  transform: scale(0.98);
+}
+.theme-button1 {
+  padding: 15px 40px; 
+ background-color: var(--theme-yellow);
+ border-radius: 100px;
+ color: #fff;
+ transition: 0.4s;
+
+ font-weight: 600;
+margin-inline-start: -1200px; 
+display: inline-block; 
+ letter-spacing: 1px;
+}
+.theme-button1:hover {
+ background-color: var(--theme-hover-yellow);
+ transform: scale(0.98);
+}
+
+@media screen and (max-width: 310px) {
+  .content-wrapping{
+  flex-wrap: wrap;
+  display:block;
+  }
+  .profile-section{
+    flex-wrap: wrap;
+    display:block;
+  }
+.profile-container{
+  flex-wrap: wrap;
+    display:block;
+}
+.content-main-div{
+  flex-wrap: wrap;
+}
+.image-div{
+  margin-top: 30px;
+  margin-right:5px;
+}
+ .footer-container{
+flex-wrap: wrap;
+display:block;
+}
+.con tainer2{
+  flex-wrap: wrap;
+}
+.default-container img{
+  margin-right: -240px;
+}
+.footer-text{
+  font-size: 12px;
+}
+.footer-section{
+flex-wrap: wrap;
+  display:block;
+      }
+  
+    .brand img{
+    margin-left: 10px;
+    width:60px;
+    text-align: center;
+    justify-content:center;
+    }
+    .default-container img{
+  margin-right: -240px;
+}
+.footer-text{
+  font-size: 12px;
+}
+.main-heading{
+  font-size: 26px;
+}
+.theme-button{
+  margin-left: -100px;
+}
+.theme-button1{
+  margin-left: 1px;
+  font-size: small;
+}
+.main-heading{
+  text-align: center;
+  justify-content:center;
+margin-right: 30px;
+
+}
+.container3{
+  margin-top: 10px;
+}
+.mission img{
+  width:250px;
+height:150px;
+margin-left: -80px;
+}
+.container3 p{
+  text-align:left;
+  margin-left: -40px;
+  margin-top: 10px;
+}
+.vission img{
+  width:250px;
+height:150px;
+margin-left: -80px;
+}
+.container2{
+  flex-direction: column;
+  margin-left: 50px; 
+  margin-top: -50px;
+  line-height: 30px;
+
+}
+.container2 h1{
+text-align: center;
+/* line-height: 10px; */
+}
+.container2 ul{
+text-align: center;
+}
+.container1 h1{
+/* margin-top: 10px; */
+  margin-left: 30px;
+  font-size: 28px;
+}
+.container1{
+  margin-top: 50px;
+}
+.container1 p{
+  margin-left: 10px;
+}
+.menu li {
+        display: block;
+        width: 100%;
+    }
+
+  /* .menu ul {
+        position: static;
+        display: none;
+    } */
+
+    .menu li:hover > ul {
+        display: none;
+    }
+}
+@media screen and (max-width: 350px){}
+@media screen and (max-width: 422px){
+
+}
+@media screen and (max-width: 550px){}
+@media screen and (max-width: 650px)
+{
+  .content-wrapping{
+  flex-wrap: wrap;
+  display:block;
+  }
+  .profile-section{
+    flex-wrap: wrap;
+    display:block;
+  }
+.profile-container{
+  flex-wrap: wrap;
+    display:block;
+}
+.content-main-div{
+  flex-wrap: wrap;
+}
+.image-div{
+  margin-top: 30px;
+  margin-right:5px;
+}
+ .footer-container{
+flex-wrap: wrap;
+display:block;
+}
+.con tainer2{
+  flex-wrap: wrap;
+}
+.default-container img{
+  margin-right: -240px;
+}
+.footer-text{
+  font-size: 12px;
+}
+.footer-section{
+flex-wrap: wrap;
+  display:block;
+      }
+  
+    .brand img{
+    margin-left: 10px;
+    width:60px;
+    text-align: center;
+    justify-content:center;
+    }
+    .default-container img{
+  margin-right: -240px;
+}
+.footer-text{
+  font-size: 12px;
+}
+.main-heading{
+  font-size: 26px;
+}
+.theme-button{
+  margin-left: -100px;
+}
+.theme-button1{
+  margin-left: 1px;
+  font-size: small;
+}
+.main-heading{
+  text-align: center;
+  justify-content:center;
+margin-right: 30px;
+
+}
+.container3{
+  margin-top: 10px;
+}
+.mission img{
+  width:250px;
+height:150px;
+margin-left: -80px;
+}
+.container3 p{
+  text-align:left;
+  margin-left: -40px;
+  margin-top: 10px;
+}
+.vission img{
+  width:250px;
+height:150px;
+margin-left: -80px;
+}
+.container2{
+  flex-direction: column;
+  margin-left: 50px; 
+  margin-top: -50px;
+  line-height: 30px;
+
+}
+.container2 h1{
+text-align: center;
+/* line-height: 10px; */
+}
+.container2 ul{
+text-align: center;
+}
+.container1 h1{
+/* margin-top: 10px; */
+  margin-left: 30px;
+  font-size: 28px;
+}
+.container1{
+  margin-top: 50px;
+}
+.container1 p{
+  margin-left: 10px;
+}
+.menu li {
+        display: block;
+        width: 100%;
+    }
+
+  /* .menu ul {
+        position: static;
+        display: none;
+    } */
+
+    .menu li:hover > ul {
+        display: none;
+    }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <section class="hero-section">
+        <div class="navbar">
+         <div class="default-container nav-container">
+        <a href="#start1" class="brand">
+         <img src="logo4.png">
+        </a>
+        <div class="menu">
+    <ul>
+            <li><a href="index.html">Home</a></li>
+            <li> <a href="#start"> About</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Associates.html">Associates</a></li>
+            <li><a href="#end1">Contact</a></li>
+              </ul>
+                </div>
+                </div>
+              </div>
+              <div class="default-container hero-container">
+                <div class="main-div">
+                  <h1 class="main-heading">
+                    ABRAJ<span class="color-text"> LAW </span>ASSOCIATES
+                  </h1>
+                  <div class="main-para">
+                    <p><b>
+                     "HELP PEOPLE  TO GET JUSTICE"
+                 
+                  </b>
+                    </p>
+                    <p><b>
+                       "ASSISST COURTS TO PROVIDE JUSTICE"
+                   </b>
+                     </p>
+                  </div>
+                  <a class="theme-button" href="tel:03007256466">0322-8661515 </a>
+                  <a  class="theme-button1" href="mailto:abrajassociates786@gmail.com">abrajassociates786@gmail.com</a>
+                </div>
+              </div>
+            </section>
+<!-- section2 -->
+<div class="container1"id="start">
+<div class="intro">
+
+ <h1 class="main-heading"><b> INTRODUCTION </b> </h1>
+ <p >  <span class="span2"> Law Associates founded in 2018, led by Muhammad Yasin Bhatti, offers a comprehensive range of legal and taxation services.<br> The firm appears to specialize in various legal areas, including Civil, Family, Criminal, Cooperate and Banking cases. <br>Additionally, they emphasize their expertise in Taxation consultancy, Bookkeeping services, and Financial advice.</span>
+ </p>
+</div>
+</div>
+
+<div class="container3">
+<div class="mission">
+  <img src="mission.png">
+
+  <p><b>"The practice is designed to provide <br>cost-effective and high-quality
+    services, indicating a<br> commitment to client satisfaction." </b></p>
+</div>
+<div class="vission">
+<img src="vission.png">
+  
+  <p ><b> “Help People to get Justice<br> Assist Courts to Provide Justice”.</b> </p> 
+</div>
+</div>
+
+<div class="container2">
+<div calss="intro213">
+  <h2><b>  LEGAL EXPERTIES:	</b></h2>		
+  
+  <ul >
+	 <li>  <b>  Banking Laws:</b> Suits & Pla's, Mortgages, Redemption, Loan & Recovery Matters.	</li>
+ <li> <b> Labor Laws:</b>  Wages Compensation, Termination & All Other Related Cases.</li> 
+	<li> <b> Criminal Laws :</b> Bails, Trials, Writs, Private Complaints, Harassment <br>&Protection,
+     Appeals. </li>
+  <li> <b> Civil Laws:</b> Declaration, Property, Stay Matters, Cancelation of Mutation/<br>Documents,damages, Defamation, General& Special Power of Attorney.</li>
+  <li> <b>Family Laws:</b> Dissolution of Marriage, Recovery of Dowry Articles, Maintenance, <br>Restitution of Conjugal Rights, Family Appeal,Custody of Minor, Guardian Appeals .			</li>
+	  <li> <b> Service Tribunal Cases :</b> Pension, Disputed, Dues, Transfer, Suspension<br> &Termination Matters.		</li>
+    <li> <b>Revenue Matters:</b> Registration of Property, Sale, Transfer & Gift Deed.	</li>
+</ul>	
+</div>
+
+<div class="intro2">
+  <h2><b> TAX LAWS EXPERTIES:</b></h2>		
+  <ul> 
+    <li>    Preparing and Monitoring book keeping And financial reports for Tax purposes    </li>
+<li>  
+	Registration of NTN, STRN, PNTN, WEBOC</li>
+  <li>   Company Registration in SECP and Filling of Forms and Reports.</li>
+  <li> 	Preparation/ Filling of Income Tax Returns and Sales Tax Returns <br>and WHT Statements.</li>
+    <li> Conduct Audit of income Tax, Sales Tax & Appeals regarding the same.</li>
+  	  <li> Monthly Returns Regarding PRA & Sales</li>
+        <li> All Other Matters of FBR,PRA,SECP,WEBOC.</li>
+          <li> 	Registration of Partnership Firms, NGO & Societies, Renewal & Modification of Particulars.</li>
+            <li> Registration, Renewal, Modification of Particulars,<b>  Regarding TRADE MARKS. </b> </li>
+              <li> Registration, Renewal, Modification of Particulars,<b>  Regarding COPY RIGHTS.</b> </li>
+  
+</ul>
+</div>
+</div>
+
+
+<!-- footer section -->
+<footer>
+    <section class="footer-section">
+      <div class="default-container footer-container">
+        <div class="end" id="end1">
+          <h1>Abraj Law Associates</h1>
+          <a href="#start1">Home</a>
+          <a href="about.html">About</a>
+          <a href="Services.html">Services</a>
+          <a href="Associates.html">Associates</a>
+          <a href="#end1">Contact</a>
+        </div>
+   <div class="end" id="end2">
+          <h1>Contact us</h1>
+          <!-- <a class="number" href="tel:03007256466">0322-8661515 </a> -->
+          <a href="mailto:abrajassociates786@gmail.com">abrajassociates786@gmail.com</a>
+            <a class="number" href="tel:03007256466">0322-8661515 </a>
+        </div>
+
+<div class="end" id="end3">
+          <h1>Addresses</h1>
+          <p>Chamber # 168 ,Upper Floor District Courts fsd</p>
+          <p>Lahore B-1 Atif Center Turner Road Lahore</p>
+          <p>
+            205.2nd Floor Ali Trade Center M M Alam Road Gulberg III Lahore
+          </p>
+        </div>
+      </div>
+    </section>
+<div class="footer-text">Al-Barkat Software House 0332-6669841( contact us to make websites of all kinds of businesses)</div>
+
+  </footer>
+</body>
+</html>
